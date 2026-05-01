@@ -39,7 +39,7 @@ export default function Hero() {
           Guía Espiritual
         </span>
         <h1 className="hero-text text-arena font-sans font-bold text-5xl md:text-7xl leading-tight mb-4 tracking-tight">
-          Ile afroumbandista de
+          Ile Afroumbandista de
           <span className="font-serif italic font-normal text-6xl md:text-8xl block mt-2 text-rojo">los caminos de Bara</span>
         </h1>
         <p className="hero-text text-arena/80 font-sans text-lg md:text-xl max-w-xl mx-auto mt-6 leading-relaxed">

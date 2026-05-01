@@ -8,7 +8,7 @@ export default function Footer() {
           Claudia Heredia de Bara axelú
         </h2>
         <p className="font-sans text-arena/70 max-w-md mb-12">
-          Santuario de introspección y bienestar. Pronta en Umbanda, Kimbanda y Nación.
+          Ile AfroUmbandista "Los Caminos de Bara Axelú". Pronta en Umbanda, Kimbanda y Nación.
         </p>
 
         <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-widest text-arena/50 mb-16">
@@ -17,7 +17,7 @@ export default function Footer() {
         </div>
 
         <div className="w-full border-t border-arena/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-sans text-arena/40">
-          <p>&copy; {new Date().getFullYear()} Claudia Heredia. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Creado por Mauricio Galvan. Todos los derechos reservados.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-arena transition-colors">Privacidad</a>
             <a href="#" className="hover:text-arena transition-colors">Términos</a>

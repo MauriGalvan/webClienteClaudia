@@ -45,7 +45,7 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto">
         <div className="mb-16 text-center contact-element">
           <h2 className="font-serif italic text-4xl md:text-5xl mb-4">AGENDA TU CONSULTA</h2>
-          <p className="font-sans text-cacao/70 max-w-xl mx-auto">Déjanos tus datos para tu consulta.</p>
+          <p className="font-sans text-cacao/70 max-w-xl mx-auto">Realizo trabajos presenciales y a distancia</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-piedra/10 p-8 md:p-12 rounded-[3rem] border border-cacao/5 contact-element">
