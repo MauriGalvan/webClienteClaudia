@@ -34,7 +34,7 @@ export default function About() {
             Mi Historia
           </h2>
           <p className="font-sans text-xl md:text-2xl font-light leading-relaxed text-arena/90 mb-6">
-            Soy <strong className="font-normal text-dorado">Claudia Heredia</strong>, conocida como Claudia de Bará Ayelú, y hace más de 20 años dedico mi vida a la práctica y enseñanza de la religión Afro-Umbandista, un camino espiritual lleno de sabiduría, protección y transformación.
+            Soy <strong className="font-normal text-dorado">Claudia Heredia</strong>, conocida como Claudia de Bará Axelú, y hace más de 20 años dedico mi vida a la práctica y enseñanza de la religión Afro-Umbandista, un camino espiritual lleno de sabiduría, protección y transformación.
           </p>
           <p className="font-sans text-lg text-arena/70 leading-relaxed mb-6">
             A lo largo de los años, me formé como hija de Santos, de Caboclo y de Exú. Soy Cacique de Umbanda, Maé de Exú y Maé de Santos. Hoy acompaño a personas que sienten el llamado espiritual y necesitan orientación clara, respeto y contención.
@@ -47,7 +47,7 @@ export default function About() {
         <div className="about-element bg-piedra/10 p-10 rounded-[3rem] border border-arena/10 flex flex-col justify-center relative">
           <h3 className="font-sans text-2xl font-medium mb-4 text-arena">Un camino con guía real</h3>
           <p className="font-sans text-arena/70 mb-8">
-            Soy fundadora del templo <span className="text-dorado">“Los Caminos de Bará Ayelú”</span>, un lugar donde podés:
+            Soy fundadora del templo <span className="text-dorado">“Los Caminos de Bará Axelú”</span>, un lugar donde podés:
           </p>
           <ul className="space-y-4 font-sans text-lg text-arena/80">
             <li className="flex items-start gap-3">

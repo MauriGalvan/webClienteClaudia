@@ -26,17 +26,17 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     const name = e.target.name.value;
     const phone = e.target.phone.value;
     const location = e.target.location.value;
     const query = e.target.query.value;
 
-    const whatsappNumber = "5491130119590"; 
-    
-    const message = `Hola Claudia.\n\nMis datos son:\n*Nombre:* ${name}\n*Teléfono:* ${phone}\n*Lugar:* ${location}\n\n*Consulta:*\n${query}`;
+    const whatsappNumber = "5491130119590";
+
+    const message = `Hola Maé Claudia.\n\nMis datos son:\n*Nombre:* ${name}\n*Teléfono:* ${phone}\n*Lugar:* ${location}\n\n*Consulta:*\n${query}`;
     const encodedMessage = encodeURIComponent(message);
-    
+
     window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
   };
 
