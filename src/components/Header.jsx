@@ -12,12 +12,14 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`fixed top-6 left-1/2 -translate-x-1/2 z-40 transition-all duration-500 rounded-[2rem] px-8 py-4 flex items-center justify-between gap-12 w-[90%] max-w-5xl ${
-      scrolled ? 'bg-arena/80 backdrop-blur-md shadow-sm border border-cacao/10' : 'bg-transparent'
-    }`}>
-      <div className="font-serif italic text-xl text-cacao font-bold tracking-wide">
+    <header className={`fixed top-6 left-1/2 -translate-x-1/2 z-40 transition-all duration-500 rounded-[2rem] px-8 py-4 flex items-center justify-between gap-12 w-[90%] max-w-5xl ${scrolled ? 'bg-arena/80 backdrop-blur-md shadow-sm border border-cacao/10' : 'bg-transparent'
+      }`}>
+      <button 
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        className={`font-serif italic text-xl font-bold tracking-wide transition-all hover:scale-105 ${scrolled ? 'text-cacao' : 'text-arena'}`}
+      >
         Claudia Heredia
-      </div>
+      </button>
       <nav className="hidden md:flex items-center gap-8 font-mono text-sm uppercase tracking-widest text-cacao/80">
         <a href="#about" className="hover:text-cacao transition-colors">Trayectoria</a>
         <a href="#services" className="hover:text-cacao transition-colors">Servicios</a>

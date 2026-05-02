@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 const images = [
   "WhatsApp Image 2026-05-01 at 01.32.55.jpeg",
   "WhatsApp Image 2026-05-01 at 01.34.26.jpeg",
-  "WhatsApp Image 2026-05-01 at 01.35.56 (1).jpeg",
+  "mae.jpeg",
   "WhatsApp Image 2026-05-01 at 01.36.40 (1).jpeg",
   "WhatsApp Image 2026-05-01 at 01.45.08 (1).jpeg",
   "WhatsApp Image 2026-05-01 at 01.45.08.jpeg",
@@ -21,7 +21,9 @@ const images = [
   "WhatsApp Image 2026-05-01 at 01.47.26 (1).jpeg",
   "WhatsApp Image 2026-05-01 at 01.47.26 (2).jpeg",
   "WhatsApp Image 2026-05-01 at 01.47.26 (3).jpeg",
-  "WhatsApp Image 2026-05-01 at 01.47.26.jpeg"
+  "WhatsApp Image 2026-05-01 at 01.47.26.jpeg",
+  "bara.jpeg",
+  "claudia.png"
 ];
 
 export default function Gallery() {

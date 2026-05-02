@@ -8,17 +8,17 @@ const features = [
   {
     id: '',
     title: 'Más de 20 Años',
-    description: 'Una trayectoria sólida guiando caminos y sanando energías con profunda sabiduría.'
+    description: 'Cuento con una trayectoria sólida guiando caminos y sanando energías con profunda sabiduría.'
   },
   {
     id: '',
     title: 'Confianza y Empatía',
-    description: 'Reconocida por su calidad humana, brindando contención y un espacio seguro para cada persona.'
+    description: 'Me caracterizo por mi calidad humana, brindando contención y un espacio seguro para cada persona.'
   },
   {
     id: '',
-    title: 'Amplia Comunidad',
-    description: 'Cientos de clientes respaldan su labor, encontrando paz y resolución a sus problemas.'
+    title: 'Gran Comunidad',
+    description: 'Acompaño a muchas personas en sus procesos, brindando guía y apoyo para que encuentren paz y claridad en sus caminos.'
   }
 ];
 

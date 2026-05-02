@@ -115,6 +115,10 @@ export default function Contact() {
                   Claudia De Bara axelu
                 </a>
               </p>
+              <p className="mb-3 flex items-center gap-2">
+                <strong className="font-medium text-cacao">Ubicacion:</strong>
+                <span>Virrey del Pino, Provincia de Buenos Aires, Argentina</span>
+              </p>
             </div>
           </div>
 

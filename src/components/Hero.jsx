@@ -28,22 +28,22 @@ export default function Hero() {
     <section ref={containerRef} className="relative h-[100dvh] w-full flex items-center justify-center overflow-hidden bg-cacao">
       {/* Background Image */}
       <div
-        className="hero-image absolute inset-0 z-0 w-full h-full bg-contain bg-no-repeat bg-center opacity-50 mix-blend-screen"
-        style={{ backgroundImage: 'url("/claudia.png")' }}
+        className="hero-image absolute inset-0 z-0 w-full h-full bg-contain bg-no-repeat bg-center opacity-100"
+        style={{ backgroundImage: 'url("/mae.jpeg")' }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-cacao/30 via-transparent to-cacao"></div>
+        {/* Un filtro muy suave para que la foto se vea súper nítida y vibrante */}
+        <div className="absolute inset-0 bg-black/20"></div>
+        {/* Solo un degradado ligero abajo para anclar el texto principal */}
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-cacao/80 to-transparent"></div>
       </div>
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto flex flex-col items-center mt-20">
-        <span className="hero-text font-mono text-rojo uppercase tracking-[0.2em] mb-6 block text-sm">
-          Guía Espiritual
-        </span>
-        <h1 className="hero-text text-arena font-sans font-bold text-5xl md:text-7xl leading-tight mb-4 tracking-tight">
+        <h1 className="hero-text text-arena font-sans font-bold text-5xl md:text-7xl leading-tight mb-4 tracking-tight drop-shadow-lg">
           Ile Afroumbandista de
-          <span className="font-serif italic font-normal text-6xl md:text-8xl block mt-2 text-rojo">los caminos de Bara</span>
+          <span className="font-serif italic font-normal text-6xl md:text-8xl block mt-2 text-rojo drop-shadow-md">los caminos de Bara</span>
         </h1>
-        <p className="hero-text text-arena/80 font-sans text-lg md:text-xl max-w-xl mx-auto mt-6 leading-relaxed">
-          Claudia Heredia de Bara axelú.<br /> Pronta en Umbanda, Kimbanda y Santos.
+        <p className="hero-text text-arena/90 font-sans text-lg md:text-xl max-w-xl mx-auto mt-6 leading-relaxed drop-shadow-md">
+          Maé en Santos, Umbanda y Kimbanda.
         </p>
       </div>
     </section>
