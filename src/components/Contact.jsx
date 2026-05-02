@@ -130,7 +130,7 @@ export default function Contact() {
               </p>
               <p className="mb-3 flex items-center gap-2">
                 <strong className="font-medium text-cacao">Ubicacion:</strong>
-                <span>Virrey del Pino, Provincia de Buenos Aires, Argentina</span>
+                <span>Virrey del Pino,Bs As, Argentina</span>
               </p>
             </div>
           </div>
