@@ -57,7 +57,11 @@ export default function Contact() {
                 <input
                   type="text"
                   id="name"
+                  name="name"
                   required
+                  pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+"
+                  title="Ingresa solo letras y espacios."
+                  onInput={(e) => { e.target.value = e.target.value.replace(/[^A-Za-záéíóúÁÉÍÓÚñÑ\s]/g, ''); }}
                   className="w-full bg-transparent border-b border-cacao/20 pb-2 font-sans text-lg focus:outline-none focus:border-cacao transition-colors placeholder:text-cacao/30"
                   placeholder="Escribe tu nombre"
                 />
@@ -68,7 +72,12 @@ export default function Contact() {
                 <input
                   type="tel"
                   id="phone"
+                  name="phone"
                   required
+                  pattern="[0-9]{1,12}"
+                  maxLength="12"
+                  title="Ingresa solo números, máximo 12 dígitos."
+                  onInput={(e) => { e.target.value = e.target.value.replace(/[^0-9]/g, '').slice(0, 12); }}
                   className="w-full bg-transparent border-b border-cacao/20 pb-2 font-sans text-lg focus:outline-none focus:border-cacao transition-colors placeholder:text-cacao/30"
                   placeholder="Escribe tu número de teléfono"
                 />
@@ -79,7 +88,11 @@ export default function Contact() {
                 <input
                   type="text"
                   id="location"
+                  name="location"
                   required
+                  pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]+"
+                  title="Ingresa solo letras y espacios."
+                  onInput={(e) => { e.target.value = e.target.value.replace(/[^A-Za-záéíóúÁÉÍÓÚñÑ\s]/g, ''); }}
                   className="w-full bg-transparent border-b border-cacao/20 pb-2 font-sans text-lg focus:outline-none focus:border-cacao transition-colors placeholder:text-cacao/30"
                   placeholder="Ciudad o país"
                 />
