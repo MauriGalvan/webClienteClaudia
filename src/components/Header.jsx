@@ -17,9 +17,9 @@ export default function Header() {
     <header className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 rounded-[2rem] px-6 md:px-8 py-4 flex items-center justify-between w-[90%] max-w-5xl ${scrolled ? 'bg-arena/90 backdrop-blur-md shadow-sm border border-cacao/10' : 'bg-transparent'
       }`}>
       <div className="flex items-center gap-4 w-full justify-between relative">
-        
+
         {/* Name / Logo */}
-        <button 
+        <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className={`font-serif italic text-xl font-bold tracking-wide transition-all hover:scale-105 ${scrolled || mobileMenuOpen ? 'text-cacao' : 'text-arena'} drop-shadow-sm`}
         >
@@ -27,27 +27,28 @@ export default function Header() {
         </button>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8 font-mono text-sm uppercase tracking-widest text-cacao/80">
+        <nav className="hidden md:flex items-center gap-6 font-mono text-xs uppercase tracking-widest text-cacao/80">
           <a href="#about" className="hover:text-cacao transition-colors">Trayectoria</a>
           <a href="#services" className="hover:text-cacao transition-colors">Servicios</a>
-          <a href="#contact" className="hover:text-cacao transition-colors">Contacto</a>
+          <a href="#testimonials" className="hover:text-cacao transition-colors">Testimonios</a>
+          <a href="#faq" className="hover:text-cacao transition-colors">Preguntas Frecuentes</a>
         </nav>
 
         <div className="flex items-center gap-2 md:gap-4">
           {/* Agendar Button - Restored for mobile */}
           <a href="#contact" className="inline-flex px-4 py-2 md:px-6 md:py-2 bg-rojo text-arena rounded-[2rem] font-sans text-xs md:text-sm font-medium hover:scale-105 transition-transform duration-300 shadow-md">
-            Agendar
+            Contactame
           </a>
-          
+
           {/* Mobile Menu Toggle */}
-          <button 
+          <button
             className="md:hidden p-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? (
-               <X className={`w-6 h-6 ${scrolled ? 'text-cacao' : 'text-arena'} drop-shadow-sm`} />
+              <X className={`w-6 h-6 ${scrolled ? 'text-cacao' : 'text-arena'} drop-shadow-sm`} />
             ) : (
-               <Menu className={`w-6 h-6 ${scrolled ? 'text-cacao' : 'text-arena'} drop-shadow-sm`} />
+              <Menu className={`w-6 h-6 ${scrolled ? 'text-cacao' : 'text-arena'} drop-shadow-sm`} />
             )}
           </button>
         </div>
@@ -59,6 +60,8 @@ export default function Header() {
           <nav className="flex flex-col gap-4 font-mono text-sm uppercase tracking-widest text-cacao/80 text-center">
             <a href="#about" onClick={() => setMobileMenuOpen(false)} className="hover:text-cacao transition-colors py-3 border-b border-cacao/5">Trayectoria</a>
             <a href="#services" onClick={() => setMobileMenuOpen(false)} className="hover:text-cacao transition-colors py-3 border-b border-cacao/5">Servicios</a>
+            <a href="#testimonials" onClick={() => setMobileMenuOpen(false)} className="hover:text-cacao transition-colors py-3 border-b border-cacao/5">Testimonios</a>
+            <a href="#faq" onClick={() => setMobileMenuOpen(false)} className="hover:text-cacao transition-colors py-3">Preguntas Frecuentes</a>
             <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="hover:text-cacao transition-colors py-3">Contacto</a>
           </nav>
         </div>

@@ -6,17 +6,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 const features = [
   {
-    id: '',
     title: 'Más de 20 Años',
     description: 'Cuento con una trayectoria sólida guiando caminos y sanando energías con profunda sabiduría.'
   },
   {
-    id: '',
     title: 'Confianza y Empatía',
     description: 'Me caracterizo por mi calidad humana, brindando contención y un espacio seguro para cada persona.'
   },
   {
-    id: '',
     title: 'Gran Comunidad',
     description: 'Acompaño a muchas personas en sus procesos, brindando guía y apoyo para que encuentren paz y claridad en sus caminos.'
   }

@@ -10,6 +10,8 @@ import Gallery from './components/Gallery';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
+import Testimonials from './components/Testimonials';
+import FAQ from './components/FAQ';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -30,10 +32,12 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <About />
         <Services />
+        <About />
         <Gallery />
+        <Testimonials />
         <Features />
+        <FAQ />
         <Contact />
       </main>
       <Footer />

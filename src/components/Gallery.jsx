@@ -1,7 +1,7 @@
 import React, { useLayoutEffect, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -28,6 +28,7 @@ const images = [
 export default function Gallery() {
   const sectionRef = useRef(null);
   const sliderRef = useRef(null);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
@@ -89,8 +90,9 @@ export default function Gallery() {
                 <img
                   src={`/${img}`}
                   alt={`Templo ${idx + 1}`}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-700 cursor-pointer"
                   loading="lazy"
+                  onClick={() => setSelectedImage(img)}
                 />
               </div>
             ))}
@@ -104,6 +106,27 @@ export default function Gallery() {
             <ChevronRight size={24} />
           </button>
         </div>
+
+        {/* Lightbox Overlay */}
+        {selectedImage && (
+          <div 
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4 backdrop-blur-sm" 
+            onClick={() => setSelectedImage(null)}
+          >
+            <button 
+              className="absolute top-6 right-6 text-arena hover:text-rojo transition-colors p-2" 
+              onClick={() => setSelectedImage(null)}
+            >
+              <X size={36} />
+            </button>
+            <img 
+              src={`/${selectedImage}`} 
+              alt="Templo Ampliado" 
+              className="max-w-full max-h-[90vh] object-contain rounded-xl shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+        )}
       </div>
     </section>
   );
