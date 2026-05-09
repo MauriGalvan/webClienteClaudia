@@ -46,7 +46,6 @@ Cuando el usuario pida construir un sitio, solicita inmediatamente *estas pregun
 - *Tipografía:* Títulos: "Manrope" o "General Sans" (limpio, aireado). Drama: "Libre Baskerville" Italic o "Lora" Italic (toque emocional). Datos: "IBM Plex Mono" o "Fira Mono".
 - *Mood de Imagen:* Luz natural difusa (amanecer / atardecer). Texturas: lino, papel artesanal, cerámica. Elementos: manos, humo suave, agua quieta, piedras, rituales simples. Espacios vacíos → el silencio es parte del diseño.
 
----
 
 # Sistema de Diseño Fijo (NUNCA CAMBIAR)
 

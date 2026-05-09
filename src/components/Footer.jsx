@@ -8,7 +8,7 @@ export default function Footer() {
           Claudia Heredia de Bara axelú
         </h2>
         <p className="font-sans text-arena/70 max-w-md mb-12">
-          Ile AfroUmbandista "Los Caminos de Bara Axelú". Pronta en Umbanda, Kimbanda y Nación.
+          Ile AfroUmbandista "Los Caminos de Bara Axelú". Maé en Umbanda, Kimbanda y Santos.
         </p>
 
         <div className="flex items-center gap-3 font-mono text-xs uppercase tracking-widest text-arena/50 mb-16">
@@ -16,12 +16,19 @@ export default function Footer() {
           Status: Aceptando Consultas
         </div>
 
-        <div className="w-full border-t border-arena/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-sans text-arena/40">
-          <p>&copy; {new Date().getFullYear()} Creado por Mauricio Galvan. Todos los derechos reservados.</p>
-          <div className="flex gap-6">
-            <a href="#" className="hover:text-arena transition-colors">Privacidad</a>
-            <a href="#" className="hover:text-arena transition-colors">Términos</a>
-          </div>
+        <div className="w-full border-t border-arena/10 pt-8 flex flex-col md:flex-row justify-center items-center gap-4 text-xs font-sans text-arena/40">
+          <p>
+            &copy; {new Date().getFullYear()} Creado por{' '}
+            <a 
+              href="https://mauri-dev.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="font-medium text-arena/80 hover:text-arena underline decoration-arena/40 underline-offset-4 hover:decoration-arena transition-all"
+            >
+              Mauricio Galvan
+            </a>
+            . Todos los derechos reservados.
+          </p>
         </div>
       </div>
     </footer>

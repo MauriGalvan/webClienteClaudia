@@ -15,7 +15,6 @@ const images = [
   "WhatsApp Image 2026-05-01 at 01.45.10.jpeg",
   "WhatsApp Image 2026-05-01 at 01.45.11 (1).jpeg",
   "WhatsApp Image 2026-05-01 at 01.45.11.jpeg",
-  "WhatsApp Image 2026-05-01 at 01.45.14 (1).jpeg",
   "WhatsApp Image 2026-05-01 at 01.45.14.jpeg",
   "WhatsApp Image 2026-05-01 at 01.45.15.jpeg",
   "WhatsApp Image 2026-05-01 at 01.47.26 (1).jpeg",

@@ -31,8 +31,8 @@ function App() {
       <main>
         <Hero />
         <About />
-        <Gallery />
         <Services />
+        <Gallery />
         <Features />
         <Contact />
       </main>

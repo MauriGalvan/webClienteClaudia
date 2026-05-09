@@ -1,7 +1,7 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
+import { Quote } from 'lucide-react';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
@@ -39,9 +39,12 @@ export default function About() {
           <p className="font-sans text-lg text-arena/70 leading-relaxed mb-6">
             A lo largo de los años, me formé como hija de Santos, de Caboclo y de Exú. Soy Cacique de Umbanda, Maé de Exú y Maé de Santos. Hoy acompaño a personas que sienten el llamado espiritual y necesitan orientación clara, respeto y contención.
           </p>
-          <p className="font-sans font-medium text-rojo/90 text-lg italic border-l-2 border-rojo pl-4 mt-8">
-            Cada proceso es único, y se respeta tu tiempo, tu energía y tu historia.
-          </p>
+          <div className="relative mt-12 p-8 rounded-[2rem] rounded-tl-none bg-gradient-to-br from-rojo/10 to-transparent border border-rojo/20 shadow-lg shadow-rojo/5">
+            <Quote className="absolute top-0 left-0 -translate-y-1/2 translate-x-6 w-8 h-8 text-rojo/40 fill-rojo/20" />
+            <p className="font-serif italic text-xl md:text-2xl text-arena/90 leading-relaxed">
+              "Cada proceso es único, y se respeta tu tiempo, tu energía y tu historia."
+            </p>
+          </div>
         </div>
 
         <div className="about-element bg-piedra/10 p-10 rounded-[3rem] border border-arena/10 flex flex-col justify-center relative">
