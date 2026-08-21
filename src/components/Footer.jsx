@@ -20,12 +20,12 @@ export default function Footer() {
           <p>
             &copy; {new Date().getFullYear()} Creado por{' '}
             <a 
-              href="https://mauri-dev.vercel.app/" 
+              href="https://www.mg-net.online/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="font-medium text-arena/80 hover:text-arena underline decoration-arena/40 underline-offset-4 hover:decoration-arena transition-all"
             >
-              Mauricio Galvan
+              MGNET.
             </a>
             . Todos los derechos reservados.
           </p>
